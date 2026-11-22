@@ -33,7 +33,7 @@ Because 98.1% of companies in the portfolio recorded zero claims during the obse
 ├── poisson_regression_final.py   # Data preprocessing, Poisson GLM training & lift-chart diagnostics
 ├── graphs.py                     # Exploratory distribution plot (empirical vs. theoretical Poisson)
 ├── requirements.txt              # Python dependencies
-└── README.md
+└── README.md```
 ## Authors
 * **Per Pettersson Ihse**
 * Carl Björkvall, Erik Brunnberg, Carl Gustafson *(KTH Royal Institute of Technology, May 2026)*
