@@ -1,6 +1,6 @@
 # Commercial Construction Insurance Claim Frequency Modeling (Poisson GLM)
 
-A statistical modeling and actuarial pricing project developed in Python to predict claim frequencies for commercial construction insurance (*entreprenadförsäkringar*), establishing a data-driven baseline for risk-based premium pricing.
+A statistical modeling and actuarial pricing project developed in Python (using an AI-assisted development workflow) to predict claim frequencies for commercial construction insurance (*entreprenadförsäkringar*), establishing a data-driven baseline for risk-based premium pricing.
 
 ## Overview
 Pricing commercial insurance requires accurate estimation of expected claim frequencies across heterogeneous risk profiles. Using historical exposure and claims data from **2022–2024** provided by **Länsförsäkringar AB**, we trained and evaluated Generalized Linear Models (GLMs) to forecast portfolio claims for **2025**.
@@ -27,6 +27,7 @@ Because 98.1% of companies in the portfolio recorded zero claims during the obse
 2. **Preprocessing:** Filtered non-positive policy durations (`duration > 0`) and applied a `+1` shift prior to log-transforming monetary variables.
 3. **Model Specification:** Fitted Poisson GLMs (`ln(μ/t) = β₀ + β₁X₁ + ...`) using policy duration `t` as offset, and benchmarked against Negative Binomial regression.
 4. **Validation:** Evaluated aggregate portfolio accuracy, 95% confidence intervals (using the Delta method), lift charts across revenue bins, and sector/region breakdowns.
+5. **Development Workflow:** Built using an AI-assisted workflow, leveraging LLM tools for rapid Python prototyping, statistical diagnostics, and visualization refinement.
 
 ## Repository Structure
 ```text
